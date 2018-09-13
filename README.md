@@ -27,4 +27,12 @@ EclipseのExternal Beam Planningにて、 `Tools -> Scripts` から `GetProfile.
 
 上記の例ですと、(-10, 0, 0)から(10, 0, 0)に向かって、1 mm刻みで線量プロファイルを取得します。
 
+座標系は、DICOM座標系となっており、ユーザーによってはEclipseの座標系とは異なる場合があります。
+
+-x to +x : Right to Left
+
+-y to +y : Anterior to Posterior
+
+-z to +z : Inferior to Superior
+
 プロファイルは1行ごとにCSVファイルとしてデスクトップに出力され、1行目から順にProfile00.csv, Profile01.csv, ... というファイル名になります。
